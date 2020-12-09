@@ -193,6 +193,8 @@
                 <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
             </div>
         </div>
+        {% block body %}
+        {% endblock %}
 
         {% if current_user.type == 0 %}
             {% block admin %}
@@ -211,8 +213,7 @@
             {% endblock %}
         {% endif %}
 
-        {% block body %}
-        {% endblock %}
+
     </main>
 </div>
 </body>
